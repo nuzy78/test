@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop | Aurelia Steps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span>Aurelia Steps</span></a>
+      <nav class="nav-links"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="actions"><button class="icon-btn menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button><a class="btn btn-primary" href="https://wa.me/94700000000" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+    </div>
+    <div class="container mobile-nav"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">Home / Shop</div>
+        <div class="section-head" style="margin-top:.8rem">
+          <div>
+            <div class="kicker">Shop collection</div>
+            <h1 class="section-title">Browse a stylish ladies footwear collection.</h1>
+          </div>
+          <div class="toolbar">
+            <input class="field" data-search type="search" placeholder="Search products..." />
+            <a class="btn btn-light" href="contact.html">Need help?</a>
+          </div>
+        </div>
+        <div class="filter-row">
+          <button class="btn filter-btn active" data-filter="all">All</button>
+          <button class="btn filter-btn" data-filter="heels">Heels</button>
+          <button class="btn filter-btn" data-filter="flats">Flats</button>
+          <button class="btn filter-btn" data-filter="sandals">Sandals</button>
+          <button class="btn filter-btn" data-filter="occasion">Occasion</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container shop-grid">
+        <article class="product-card" data-product data-category="heels" data-title="Grace Nude Heels" data-tags="heels nude occasion glam">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M28 110c36-4 62-20 82-36 17-14 37-22 57-22 15 0 25 6 28 14 4 9-1 19-14 25-16 7-37 11-58 27-10 8-18 18-29 22-25 9-56 5-76 5-10 0-18-7-18-15 0-9 8-17 28-20z" fill="#f1d7c0" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Heels</div>
+          <h3>Grace Nude Heels</h3>
+          <p class="muted">Soft straps, elegant lift, and a flattering finish for events.</p>
+          <div class="meta"><span class="price">Rs 7,900</span><span class="rating">★★★★★</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Grace Nude Heels">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+
+        <article class="product-card" data-product data-category="flats" data-title="Soft Walk Flats" data-tags="flats comfort daily office">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M24 108c40-2 72-15 100-36 21-16 42-24 61-24 17 0 28 7 28 16 0 11-9 21-25 26-19 6-36 9-54 24-12 10-19 19-35 23-28 6-69 4-89 4-11 0-20-8-20-17 0-8 6-15 34-16z" fill="#f8e8d8" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Flats</div>
+          <h3>Soft Walk Flats</h3>
+          <p class="muted">Simple, comfortable, and easy to match with any outfit.</p>
+          <div class="meta"><span class="price">Rs 5,400</span><span class="rating">★★★★★</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Soft Walk Flats">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+
+        <article class="product-card" data-product data-category="sandals" data-title="Golden Strap Sandals" data-tags="sandals festive gold party">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M25 104c38 0 67-13 92-31 16-12 35-19 56-19 16 0 27 6 31 14 4 9-1 19-13 25-16 7-34 11-52 23-16 10-25 22-45 26-25 5-57 1-74 1-12 0-20-8-20-16 0-11 6-20 25-23z" fill="#f2dcc9" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Sandals</div>
+          <h3>Golden Strap Sandals</h3>
+          <p class="muted">A bright, polished look for celebrations and evenings.</p>
+          <div class="meta"><span class="price">Rs 6,800</span><span class="rating">★★★★☆</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Golden Strap Sandals">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+
+        <article class="product-card" data-product data-category="occasion" data-title="Pearl Bloom Heels" data-tags="occasion heels pearl wedding">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M24 110c32 1 57-8 78-22 18-12 36-22 57-24 18-1 31 6 35 15 4 9-2 18-15 24-20 9-41 13-59 24-13 8-24 18-41 20-31 4-59-3-79-3-8 0-15-7-15-15s13-19 39-19z" fill="#ffe9da" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Occasion</div>
+          <h3>Pearl Bloom Heels</h3>
+          <p class="muted">A delicate look for wedding and party outfits.</p>
+          <div class="meta"><span class="price">Rs 8,200</span><span class="rating">★★★★★</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Pearl Bloom Heels">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+
+        <article class="product-card" data-product data-category="flats" data-title="Everyday Loafers" data-tags="flats office comfort classic">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M20 106c48-1 76-13 106-40 22-19 49-29 70-24 11 3 18 10 17 18-1 13-18 24-43 29-16 3-35 4-50 12-13 7-20 18-34 25-19 9-41 10-66 10-15 0-28-10-28-22 0-6 4-8 8-8z" fill="#f9e8da" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Flats</div>
+          <h3>Everyday Loafers</h3>
+          <p class="muted">A tidy everyday option for work and travel.</p>
+          <div class="meta"><span class="price">Rs 5,950</span><span class="rating">★★★★☆</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Everyday Loafers">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+
+        <article class="product-card" data-product data-category="sandals" data-title="Rose Gold Slides" data-tags="sandals slides casual gold">
+          <div class="product-thumb"><svg viewBox="0 0 220 160"><path d="M26 100c25 2 55-7 83-26 19-12 38-18 60-18 19 0 30 8 30 18 0 12-10 20-28 24-25 5-41 14-56 26-15 12-36 16-66 15-11 0-24-10-24-20s6-17 1-19z" fill="#f3ddcb" stroke="#c8956a" stroke-width="5"/></svg></div>
+          <div class="tag">Sandals</div>
+          <h3>Rose Gold Slides</h3>
+          <p class="muted">Easy slip-on style with a polished finish.</p>
+          <div class="meta"><span class="price">Rs 4,900</span><span class="rating">★★★★☆</span></div>
+          <div class="product-actions"><button class="btn btn-primary" data-add-to-bag="Rose Gold Slides">Add to bag</button><a class="btn btn-light" href="contact.html">Order</a></div>
+        </article>
+      </div>
+      <div class="container" data-empty-state style="display:none;margin-top:1rem">
+        <div class="empty-state">No matching product found. Try another category or search term.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><small>© 2026 Aurelia Steps.</small></div></footer>
+  <a class="floating-wa" href="https://wa.me/94700000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  <div class="toast" data-toast>Saved</div>
+  <script src="script.js"></script>
+</body>
+</html>
